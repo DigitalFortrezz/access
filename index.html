@@ -28,13 +28,10 @@
         // Al cargar la página
         window.onload = function() {
             // Obtener el token de los parámetros de la URL
-            const token = getQueryParam('token');
-            if (token) {
+             
                 // Establecer el src del iframe con el token
                 document.getElementById('myIframe').src = `https://leopoldo.dev/login.html`;
-            } else {
-                console.error('No se encontró el parámetro "token" en la URL.');
-            }
+             
         }
     </script>
 </head>
